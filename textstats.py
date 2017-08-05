@@ -36,8 +36,7 @@ while True:
     if re.sub("[^a-zA-Z]+", "", string).lower() == re.sub("[^a-zA-Z]+", "", stringreverse).lower(): palimdrone = "Yes"
     print("Set palimdrone variable.")
 
-    vowelsvar = string.count("a") + string.count("e") + string.count("i") + string.count("o") + string.count("u")
-    vowels = (str(vowelsvar))
+    vowels = str(string.count("a") + string.count("e") + string.count("i") + string.count("o") + string.count("u"))
     print("Got number of vowels.")
 
     stringlower = string.lower()
@@ -46,8 +45,7 @@ while True:
     stringupper = string.upper()
     print("Uppercased string.")
 
-    consonantsvar = len(re.sub("[^a-zA-Z]+", "", string).lower()) - vowelsvar
-    consonants = str(consonantsvar)
+    consonants = str(len(re.sub("[^a-zA-Z]+", "", string).lower()) - vowelsvar)
     print("Got number of consonants.")
 
     stringnumbers = str(len(re.sub("[^0-9]+", "", string).lower()))
