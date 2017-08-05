@@ -45,7 +45,7 @@ while True:
     stringupper = string.upper()
     print("Uppercased string.")
 
-    consonants = str(len(re.sub("[^a-zA-Z]+", "", string).lower()) - vowels)
+    consonants = str(len(re.sub("[^a-zA-Z]+", "", string).lower()) - int(vowels))
     print("Got number of consonants.")
 
     stringnumbers = str(len(re.sub("[^0-9]+", "", string).lower()))
