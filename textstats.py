@@ -64,7 +64,7 @@ while True:
     print(Style.BRIGHT + Fore.GREEN + "===", Style.BRIGHT + Fore.WHITE + 'Stats of "', Style.BRIGHT + Fore.WHITE + string, Style.BRIGHT + Fore.WHITE + '"', Style.BRIGHT + Fore.GREEN + "===", sep="")
     printstats("String:", string)
     printstats("Reversed:", stringreverse)
-    printstats("Palimdrone:", palimdrone)
+    printstats("Palindrome:", palindrome)
     printstats("Words:", stringwords)
     printstats("Characters:", stringlength)
     printstats("Numbers:", stringnumbers)
